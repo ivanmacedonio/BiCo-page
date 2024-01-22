@@ -44,6 +44,8 @@
     width: fit-content;
     padding: 0.5rem 4rem;
     border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 .items label{
     display: flex;
@@ -56,5 +58,59 @@
 .imagenLobby{
     margin-top: 10vh;
 }
-.imagenLobby img{
+
+@media (max-width: 768px){
+   .lobby{
+    order: 2;
+   }
+    .containerlobby{
+        background: none;
+        flex-direction: column;
+    }
+    .imagenLobby{
+        margin-top: 2rem;
+        max-width: 100%;
+        order: 1;
+    }
+    .imagenLobby img{
+        max-width: 100%;
+    }
+    .lobby h3{
+        max-width: 80%;
+    }
+    .items{
+        flex-direction: column;
+        background: none;
+        width: 100%;
+        padding: 0;
+        gap: 1rem;
+        margin-top: 4rem;
+        box-shadow: none;
+    }
+    .items label{
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width : 1280px) and (max-width: 1700px){
+    .imagenLobby{
+        margin-right: 20vw;
+    }
+    .imagenLobby img{
+        max-width: 150%;
+    }
+    .lobby h1{
+        font-size: 2.5rem;
+        max-width: max-content;
+    }
+    .lobby{
+        margin-bottom: 10vh;
+    }
+    .items{
+        width: 80%;
+    }
+    .items label{
+        max-width: 100%;
+    }
 }

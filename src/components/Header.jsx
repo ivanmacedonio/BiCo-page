@@ -29,7 +29,7 @@ export const Header = () => {
           <img src={logo} alt="" />
           <label>
             <h2>BiXo</h2>
-            <h4>Comunicación digital</h4>
+            <h4>Soluciones digitales</h4>
           </label>
         </div>
         <div className="links">

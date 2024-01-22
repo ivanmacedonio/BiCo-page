@@ -1,0 +1,41 @@
+.ecommerceContainer{
+    font-family: 'noto sans';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 10rem;
+}
+.ecommerceContainer h1{
+    font-size: 3rem;
+}
+.ecommerceContainer h2{
+    font-size: 2rem;
+    color: gray;
+}
+.ecommerceContainer p{
+    font-size: 1.2rem;
+}
+.ecommerceText{
+    max-width: 30%;
+}
+.ecommerceText b{
+    color: rgb(144, 0, 255);
+}
+@media (max-width: 768px){
+    .ecommerceContainer{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .ecommerceText{
+        order: 1;
+        max-width: 80%;
+    }
+    .ecommerceGif{
+        order: 2;
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+}

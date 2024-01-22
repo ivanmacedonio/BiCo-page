@@ -1,0 +1,45 @@
+.tiendaContainer {
+    font-family: 'noto sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tiendaContainer h1{
+    margin: 5rem 0;
+    font-size: 2.5rem;
+}
+.tiendaContainer b{
+    color: rgb(255, 0, 200);
+}
+
+.tiendaList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 50%;
+    gap: 3rem;
+}
+.tiendaCard h2{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 1.3rem;
+    margin-bottom: 0;
+    border-top-right-radius: 1rem;
+}
+.tiendaCard h3{
+    background-color: gray;
+    margin-top: 0;
+    padding: 0.7rem;
+    color: rgb(214, 213, 213);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.tiendaCard p{
+    margin-top: 0;
+    padding: 1rem;
+    background-color: rgb(212, 210, 210);
+}
+
+.tiendaCard{
+    border-radius: 1rem;
+}

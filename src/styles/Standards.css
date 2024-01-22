@@ -1,0 +1,42 @@
+.standardsContainer {
+    font-family: 'noto sans';
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 15vh;
+}
+
+.cardEstandares {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    max-width: 80%;
+}
+.cardEstandares h1{
+    font-size: 2rem;
+}
+.cardEstandares p{
+    font-size: 1.2rem;
+    color: gray;
+}
+.cardEstandares img{
+    border-radius: 1rem;
+    max-width: 50%;
+}
+
+#estandaresTitulo{
+    font-size: 2.5rem;
+    color: gray;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 768px){
+    .cardEstandares{
+        flex-direction: column;
+        max-width: 100%;
+        gap: 1rem;
+    }
+    .cardEstandares img{
+        max-width: 100%;
+    }
+}

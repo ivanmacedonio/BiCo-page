@@ -10,7 +10,7 @@ export const Inicio = () => {
       <div className="lobby">
         <h1>Comunica. Colabora. Crea.</h1>
         <h3>
-          BiCo ofrece una forma eficaz y potente de gestionar tus proyectos
+          BiXo ofrece una forma eficaz y potente de lanzar tu negocio al mundo digital
         </h3>
         <button>Empezar</button>
         <div className="items">
@@ -24,7 +24,7 @@ export const Inicio = () => {
           </label>
           <label>
             <img src={icono2} alt="" />
-            Mejor colaboración
+            Feedback constante
           </label>
         </div>
       </div>
