@@ -1,0 +1,84 @@
+.formContact h1{
+    font-family: 'montserrat';
+    margin-top: 0rem;
+    font-size: 75px;
+    line-height: 65px;
+    font-weight: 800;
+    max-width: 40%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+.contactContainer{
+    display: flex;
+    gap: 3rem;
+    background-color: #d90429;
+    color: rgb(255, 255, 255);
+    font-family: 'montserrat';
+}
+.sideCard{
+    background-color: #ef233c;
+    width: 30%;
+}
+.inputsContact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3rem;
+    column-gap: 4rem;
+}
+.inputsContact p{
+    margin-bottom: 5px;
+}
+
+.inputsContact input{
+    width: 100%;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 7px 10px;
+    background-color: #d90429;
+
+    border: 1px solid rgb(195, 195, 195);
+    color: white;
+}
+.double{
+    grid-column: span 2;
+    min-width: 100%;
+}
+.formContact form{
+    max-width: 90%;
+}
+.contactContainer button{
+    font-family: 'montserrat';
+    border: none;
+    margin-bottom: 10rem;
+    background: none;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+#message{
+    padding-bottom: 10vh;
+}
+
+@media(max-width: 768px){
+    .formContact h1{
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+    .inputsContact{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+    .formContact form{
+        max-width: 80%;
+    }
+    
+}

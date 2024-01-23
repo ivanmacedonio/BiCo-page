@@ -1,116 +1,83 @@
-.containerlobby{
+.containerInicio{
+    font-family: 'segoe ui';
+    background-color: rgb(111,119,244);
+    color: white;
+    min-height: 90vh;
+    
+}
+.containerInicio label{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-image: url('../assets/fondo.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.lobby{
-    width: 100%;
-    font-family: 'Noto sans';
-    margin-left: 10vw;
-}
-.lobby h1{
-    max-width: 20vw;
-    font-weight: 500;
+    gap: 2rem;
     font-size: 3rem;
 }
-
-.lobby h3{
-    max-width: 20vw;
-    color: gray;
-    font-weight: 300;
-}
-.lobby button{
-    border: none;
-    background-color: rgb(0, 0, 0);
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.3rem;
-    font-weight: 700;
-    font-size: 1rem;
+.containerInicio label img{
     color: white;
-    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    max-width: 20rem;
 }
-.items img{
-    width: 3rem;
+.textInicio h2{
+    font-size: 2.8rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
 }
-.items{
-    margin-top: 10vh;
+.logoContainer h2{
+    font-size: 3rem;
+}
+.textInicio h1{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 0;
+}
+.textInicio{
+    margin-top: 15vh;
     display: flex;
-    background-color: rgb(255, 255, 255);
-    width: fit-content;
-    padding: 0.5rem 4rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-}
-.items label{
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
-    max-width: 10vw;
-    font-size: 0.9rem;
+}
+.logoContainer{
+    margin-left: 10vw;
+    padding-top: 5vh;
 }
 
-.imagenLobby{
-    margin-top: 10vh;
-}
-
-@media (max-width: 768px){
-   .lobby{
-    order: 2;
-   }
-    .containerlobby{
-        background: none;
-        flex-direction: column;
+@media(max-width: 768px){
+    .textInicio h2{
+        font-size: 2rem;
     }
-    .imagenLobby{
-        margin-top: 2rem;
-        max-width: 100%;
-        order: 1;
-    }
-    .imagenLobby img{
-        max-width: 100%;
-    }
-    .lobby h3{
-        max-width: 80%;
-    }
-    .items{
-        flex-direction: column;
-        background: none;
-        width: 100%;
-        padding: 0;
-        gap: 1rem;
-        margin-top: 4rem;
-        box-shadow: none;
-    }
-    .items label{
-        max-width: 100%;
-        font-size: 1.1rem;
+    .textInicio h1{
+        font-size: 3rem;
     }
 }
-
-@media (min-width : 1280px) and (max-width: 1700px){
-    .imagenLobby{
-        margin-right: 20vw;
+a {
+    text-decoration: none;
+  }
+  .main__scroll-text {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .main__action:hover .main__scroll-box {
+    animation: scroll-down 3s infinite;
+  }
+  
+  /* Animate scroll icon */
+  @keyframes scroll-down {
+    0%, 100% {
+      transform: translateY(0rem);
+      opacity: 1;
     }
-    .imagenLobby img{
-        max-width: 150%;
+  
+    35% {
+      transform: translateY(1rem);
+      opacity: 0;
     }
-    .lobby h1{
-        font-size: 2.5rem;
-        max-width: max-content;
+  
+    70% {
+      transform: translateY(-1rem);
+      opacity: 0;
     }
-    .lobby{
-        margin-bottom: 10vh;
-    }
-    .items{
-        width: 80%;
-    }
-    .items label{
-        max-width: 100%;
-    }
-}
+  }
+  

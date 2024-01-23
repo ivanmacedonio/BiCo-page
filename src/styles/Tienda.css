@@ -4,42 +4,77 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 }
-.tiendaContainer h1{
-    margin: 5rem 0;
+
+.tiendaContainer h1 {
+    margin: 5rem 0 2rem 0;
     font-size: 2.5rem;
 }
-.tiendaContainer b{
+
+.tiendaContainer b {
     color: rgb(255, 0, 200);
 }
+
+
 
 .tiendaList {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 50%;
+    max-width: 60vw;
     gap: 3rem;
 }
-.tiendaCard h2{
+
+.tiendaCard h2 {
     background-color: rgb(77, 77, 77);
     color: white;
     padding: 1.3rem;
     margin-bottom: 0;
     border-top-right-radius: 1rem;
 }
-.tiendaCard h3{
+
+.tiendaCard h3 {
     background-color: gray;
     margin-top: 0;
     padding: 0.7rem;
-    color: rgb(214, 213, 213);
+    color: rgb(234, 233, 233);
+    font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 0;
 }
-.tiendaCard p{
+
+.tiendaCard p {
     margin-top: 0;
     padding: 1rem;
-    background-color: rgb(212, 210, 210);
+    margin-bottom: 0;
+    font-style: italic;
+
 }
 
-.tiendaCard{
+.listItem img {
+    max-width: 1.5rem;
+}
+
+.listItem {
+    background-color: rgb(212, 210, 210);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.tiendaCard {
     border-radius: 1rem;
+}
+
+
+@media(max-width: 768px) {
+    .tiendaList {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .tiendaContainer h1 {
+        margin-left: 2rem;
+    }
 }

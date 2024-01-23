@@ -1,0 +1,27 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    justify-content: space-around;
+    background-color: rgb(111,119,244);
+    color: white;
+}
+.slogan h1{
+    font-size: 4rem;
+    font-family: 'montserrat';
+}
+.contactoItem{
+    display: flex;
+    font-family: 'montserrat';
+    gap: 1rem;
+}
+.contactoItem img{
+    max-width: 1.4rem;
+}
+
+@media(max-width: 768px){
+    .footerContainer{
+        flex-direction: column;
+        padding-bottom: 10vh;
+    }
+}
