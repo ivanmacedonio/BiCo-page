@@ -28,6 +28,9 @@
         flex-direction: column;
         gap: 0rem;
     }
+    .ecommerceContainer h1{
+        line-height: 45px;
+    }
     .ecommerceText{
         order: 1;
         max-width: 80%;

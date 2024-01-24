@@ -53,6 +53,10 @@
     .websContainer h1{
         max-width: 90%;
         font-size: 3rem;
+        line-height: 40px;
+    }
+    .websContainer p{
+        max-width: 100%;
     }
     .imageWebContainer{
         display: none;

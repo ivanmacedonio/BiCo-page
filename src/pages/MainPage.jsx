@@ -1,8 +1,7 @@
 import React from "react";
+import { Contact } from "../components/Contact";
 import { Ecommerce } from "../components/Ecommerce";
 import { Inicio } from "../components/Inicio";
-// import { Standards } from "../components/Standards";
-import { Contact } from "../components/Contact";
 import { Tienda } from "../components/Tienda";
 import { Ventajas } from "../components/Ventajas";
 import { Webs } from "../components/Webs";
