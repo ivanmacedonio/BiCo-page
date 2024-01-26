@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
-import check from '../assets/check.svg';
-import navegador from '../assets/chrome.svg';
-import responsive from '../assets/phone.png';
+
+import check from "../assets/check.svg";
+import navegador from "../assets/chrome.svg";
+import responsive from "../assets/phone.png";
 import "../styles/Ventajas.css";
 export const Ventajas = () => {
   return (
@@ -16,7 +18,12 @@ export const Ventajas = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="ventajasText">
+      <motion.div
+        className="ventajasText"
+        initial={{ y: -120, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="ventajasCard">
           <div className="imagenCard">
             <img src={check} alt="" />
@@ -36,7 +43,8 @@ export const Ventajas = () => {
           <div className="textCard">
             <h1>Promovemos tu identidad</h1>
             <h3>
-            Posicionamos el sitio web de forma estratégica para que los clientes tengan un fácil acceso a la plataforma
+              Posicionamos el sitio web de forma estratégica para que los
+              clientes tengan un fácil acceso a la plataforma
             </h3>
           </div>
         </div>
@@ -51,7 +59,7 @@ export const Ventajas = () => {
             </h3>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

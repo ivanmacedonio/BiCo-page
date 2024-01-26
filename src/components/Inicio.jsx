@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import React from "react";
 import "../styles/Inicio.css";
 export const Inicio = () => {
-  function handleScroll(){
+  function handleScroll() {
     window.scrollTo({
       top: window.scrollY + 0.8 * window.innerHeight,
       behavior: "smooth",
-    })
+    });
   }
 
   return (
@@ -14,15 +14,14 @@ export const Inicio = () => {
       <div className="logoContainer">
         <h2>BIXO</h2>
       </div>
-      <div className="textInicio">
+      <motion.div
+        className="textInicio"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h2>Diseño Web </h2>
-        <motion.div
-          initial = {{y: -50}}
-          animate = {{y: 0}}
-          transition={{duration: 1.2}}
-        >
-          <h1>Personalizado</h1>
-        </motion.div>
+        <h1>Personalizado</h1>
 
         <div class="main__action" onClick={handleScroll}>
           <a class="main__scroll" href="#">
@@ -39,7 +38,7 @@ export const Inicio = () => {
             <span class="main__scroll-text">Scroll</span>
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
