@@ -23,22 +23,6 @@ export const Portfolio = () => {
         <div
           className="box"
           onClick={() => {
-            window.location.href = "https://minishop-dev.netlify.app/";
-          }}
-        >
-          <h1>MiniShop</h1>
-        </div>
-        <div
-          className="box"
-          onClick={() => {
-            window.location.href = "https://fumi-dev.netlify.app/";
-          }}
-        >
-          <h1>FUMI</h1>
-        </div>
-        <div
-          className="box"
-          onClick={() => {
             window.location.href = "https://rockit-dev.netlify.app/";
           }}
         >
@@ -67,6 +51,22 @@ export const Portfolio = () => {
           }}
         >
           <h1>Bemus</h1>
+        </div>
+        <div
+          className="box"
+          onClick={() => {
+            window.location.href = "https://minishop-dev.netlify.app/";
+          }}
+        >
+          <h1>MiniShop</h1>
+        </div>
+        <div
+          className="box"
+          onClick={() => {
+            window.location.href = "https://fumi-dev.netlify.app/";
+          }}
+        >
+          <h1>FUMI</h1>
         </div>
       </div>
     </motion.div>
