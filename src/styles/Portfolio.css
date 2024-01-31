@@ -1,0 +1,96 @@
+.header-portfolio h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    text-align: center;
+    padding: 20vh 0;
+    font-size: 5rem;
+}
+
+.header-portfolio {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 216, 69);
+    height: 70%;
+    color: white;
+    font-family: 'montserrat';
+}
+
+.portfolio {
+    font-family: 'montserrat';
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.portfolio h2 {
+    font-size: 3rem;
+    color: rgb(58, 58, 58);
+    margin-bottom: 5px;
+}
+
+.portfolio p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.webs-cnt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: 'montserrat';
+    text-align: center;
+    color: white;
+}
+
+.webs-cnt img {
+    max-width: 100%;
+}
+
+.webs-cnt h1 {
+    font-weight: 800;
+    background-color: #f79d36;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    cursor: pointer;
+}
+
+@media (max-width : 768px) {
+    .header-portfolio h1 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio p {
+        max-width: 80%;
+
+    }
+
+    .webs-cnt {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+    }
+ 
+    .webs-cnt h1{
+        font-size: 1.4rem;
+    }
+}

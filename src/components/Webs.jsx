@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 import webs from "../assets/Webs.webp";
 import "../styles/Webs.css";
 export const Webs = () => {
@@ -31,7 +32,7 @@ export const Webs = () => {
           <li>Landing / Onepage / Blog</li>
           <li>Proyecto Personalizado</li>
         </ul>
-        <button>Ver Portafolio {">"} </button>
+        <Link to={'/portfolio'} className="link1">Ver Portafolio {">"}</Link>
       </motion.div>
     </div>
   );

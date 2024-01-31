@@ -32,7 +32,8 @@
 .imageWebContainer img{
     max-width: 100%;
 }
-.websContainer button{
+.websContainer a{
+    color: inherit;
     margin-top: 10vh;
     font-family: 'montserrat';
     border: none;
