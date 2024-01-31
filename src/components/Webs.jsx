@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
-import webs from "../assets/Webs.webp";
+import webs from "../assets/siteswebv.webp";
 import "../styles/Webs.css";
 export const Webs = () => {
   return (
