@@ -58,10 +58,10 @@ export const Portfolio = () => {
         <div
           className="box"
           onClick={() => {
-            window.location.href = "https://cymoom.ar/moom/";
+            window.location.href = "https://www.vandalia.com.ar/";
           }}
         >
-          <h1>CYMOOM</h1>
+          <h1>Vandalia</h1>
         </div>
       </div>
     </motion.div>
