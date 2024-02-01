@@ -1,35 +1,66 @@
+import emailjs from 'emailjs-com';
 import React from "react";
+import { useForm } from 'react-hook-form';
 import "../styles/Contact.css";
+
 export const Contact = () => {
+  const { register, handleSubmit } = useForm();
+
+  function sendMail(data) {
+    const serviceId = 'bixo-service';
+    const templateId = 'template_vyrou1b';
+    const userId = 'GwjrRS_aYBeP0zwKs';
+
+    
+    const templateParams = {
+      from_name: data.Email,
+      message: data.message,
+      Numero: data.Numero,
+      Email: data.Email
+    }
+
+    emailjs.send(serviceId, templateId, templateParams, userId)
+      .then((response) => {
+        console.log('Correo electrónico enviado con éxito:', response);
+        window.location.reload()
+      })
+      .catch((error) => {
+        console.error('Error al enviar el correo electrónico:', error);
+      });
+  };
+
+  const onSubmit = (data) => {
+    sendMail(data);
+  };
+
   return (
     <div className="contactContainer">
       <div className="sideCard"></div>
       <div className="formContact">
         <h1>Contactate con nosotros.</h1>
         <p>Esperamos tu mensaje, respondemos en 24hs hábiles</p>
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="inputsContact">
             <label>
               <p>Nombre</p>
-              <input type="text" />
+              <input type="text" {...register('from_name')} />
             </label>
             <label>
               <p>Teléfono</p>
-              <input type="number" />
+              <input type="number" {...register('Numero')} />
             </label>
             <label className="double">
               <p>Email</p>
-              <input type="text" />
+              <input type="text" {...register('Email')} />
             </label>
-            <label  className="double">
+            <label className="double">
               <p>Mensaje</p>
-              <input type="text" id="message" />
+              <input type="text" id="message" {...register('message')} />
             </label>
           </div>
-          <button>Enviar</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </div>
-    
   );
 };
