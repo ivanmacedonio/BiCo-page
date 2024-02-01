@@ -58,18 +58,10 @@ export const Portfolio = () => {
         <div
           className="box"
           onClick={() => {
-            window.location.href = "https://minishop-dev.netlify.app/";
+            window.location.href = "https://cymoom.ar/moom/";
           }}
         >
-          <h1>MiniShop</h1>
-        </div>
-        <div
-          className="box"
-          onClick={() => {
-            window.location.href = "https://fumi-dev.netlify.app/";
-          }}
-        >
-          <h1>FUMI</h1>
+          <h1>CYMOOM</h1>
         </div>
       </div>
     </motion.div>
