@@ -8,11 +8,11 @@ export const Ecommerce = () => {
       <div className="ecommerceGif">
         <iframe
           src="https://giphy.com/embed/QVUL20w0FwLKnQuX4D"
-          width="480"
+          width="300"
           height="379"
           frameBorder="0"
           class="giphy-embed"
-          allowFullScreen
+
         ></iframe>
       </div>
       <motion.div

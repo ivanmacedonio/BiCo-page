@@ -44,9 +44,14 @@
     .ventajasText {
         max-width: 80%;
     }
+    .ventajasGif{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .ventajasGif iframe {
-        max-width: 100%;
+        max-width: 80%;
     }
     .ventajasCard{
         margin-left: 3rem;

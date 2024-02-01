@@ -11,11 +11,10 @@ export const Ventajas = () => {
       <div className="ventajasGif">
         <iframe
           src="https://giphy.com/embed/9VcMAOFmVpiVFlxIqW"
-          width="480"
+          width="280"
           height="480"
           frameBorder="0"
           class="giphy-embed"
-          allowFullScreen
         ></iframe>
       </div>
       <motion.div

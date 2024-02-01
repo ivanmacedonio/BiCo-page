@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Portfolio.css";
 export const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.div
       className="portfolio-cnt"

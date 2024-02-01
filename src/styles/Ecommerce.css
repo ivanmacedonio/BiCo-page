@@ -35,9 +35,19 @@
         order: 1;
         max-width: 80%;
     }
+    .ecommerceText h1{
+        font-size: 2rem;
+    }
+    .ecommerceText h2{
+        font-size: 1.5rem;
+    }
+    .ecommerceText p{
+        font-size: 1.2rem;
+    }
+    
     .ecommerceGif{
         order: 2;
-        max-width: 90%;
+        max-width: 100%;
         display: flex;
         justify-content: center;
     }
