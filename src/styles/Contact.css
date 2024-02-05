@@ -80,5 +80,8 @@
     .formContact form{
         max-width: 80%;
     }
+    .formContact p{
+        max-width: 80%;
+    }
     
 }

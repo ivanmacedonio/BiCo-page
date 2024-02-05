@@ -33,6 +33,12 @@
     font-size: 1.2rem;
     margin-top: 10px;
 }
+.ventajasGif img{
+    max-width: 100%;
+}
+.ventajasGif{
+    max-width: 13%;
+}
 
 @media(max-width: 768px) {
     .ventajasContainer {
@@ -45,9 +51,8 @@
         max-width: 80%;
     }
     .ventajasGif{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        max-width: 50%;
+        margin: 0 auto;
     }
 
     .ventajasGif iframe {
@@ -55,7 +60,12 @@
     }
     .ventajasCard{
         margin-left: 3rem;
-
+    }
+    .ventajasCard h1{
+        font-size: 1.4rem;
+    }
+    .ventajasCard h3{
+        font-size: 1.2rem;
     }
 
 }

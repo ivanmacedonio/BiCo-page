@@ -1,26 +1,20 @@
 import { motion } from "framer-motion";
 import React from "react";
-
 import check from "../assets/check.svg";
 import navegador from "../assets/chrome.svg";
-import responsive from "../assets/phone.png";
+import responsive from "../assets/phone.svg";
+import portada from '../assets/portada.png';
 import "../styles/Ventajas.css";
 export const Ventajas = () => {
   return (
     <div className="ventajasContainer">
       <div className="ventajasGif">
-        <iframe
-          src="https://giphy.com/embed/9VcMAOFmVpiVFlxIqW"
-          width="280"
-          height="480"
-          frameBorder="0"
-          class="giphy-embed"
-        ></iframe>
+       <img src={portada} alt="" />
       </div>
       <motion.div
         className="ventajasText"
         initial={{ y: -120, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        whileInView={{ y: -50, opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <div className="ventajasCard">
