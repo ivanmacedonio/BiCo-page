@@ -7,7 +7,7 @@ import portada from '../assets/portada.png';
 import "../styles/Ventajas.css";
 export const Ventajas = () => {
   return (
-    <div className="ventajasContainer">
+    <aside className="ventajasContainer">
       <div className="ventajasGif">
        <img src={portada} alt="" />
       </div>
@@ -22,11 +22,11 @@ export const Ventajas = () => {
             <img src={check} alt="" />
           </div>
           <div className="textCard">
-            <h1>Incrementa tus ventas</h1>
-            <h3>
+            <h3>Incrementa tus ventas</h3>
+            <h4>
               Llega a muchos mas visitantes con un sitio web optimizado para
               vender.
-            </h3>
+            </h4>
           </div>
         </div>
         <div className="ventajasCard">
@@ -34,11 +34,11 @@ export const Ventajas = () => {
             <img src={navegador} alt="" />
           </div>
           <div className="textCard">
-            <h1>Promovemos tu identidad</h1>
-            <h3>
+            <h3>Promovemos tu identidad</h3>
+            <h4>
               Posicionamos el sitio web de forma estratégica para que los
               clientes tengan un fácil acceso a la plataforma
-            </h3>
+            </h4>
           </div>
         </div>
         <div className="ventajasCard">
@@ -46,13 +46,13 @@ export const Ventajas = () => {
             <img src={responsive} alt="" />
           </div>
           <div className="textCard">
-            <h1>Diseño responsivo</h1>
-            <h3>
+            <h3>Diseño responsivo</h3>
+            <h4>
               Sitios web adaptados a todo tipo de pantallas y dispositivos
-            </h3>
+            </h4>
           </div>
         </div>
       </motion.div>
-    </div>
+    </aside>
   );
 };

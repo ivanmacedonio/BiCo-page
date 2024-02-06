@@ -7,15 +7,18 @@
     margin-top: 10vh;
     gap: 10rem;
 }
-.ecommerceContainer h1{
-    font-size: 3rem;
-}
 .ecommerceContainer h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.ecommerceContainer h3{
     font-size: 2rem;
     color: gray;
+    margin-top: 0;
 }
 .ecommerceContainer p{
     font-size: 1.2rem;
+    color: rgb(77, 77, 77);
 }
 .ecommerceText{
     max-width: 30%;
@@ -35,10 +38,11 @@
         order: 1;
         max-width: 80%;
     }
-    .ecommerceText h1{
-        font-size: 2rem;
-    }
     .ecommerceText h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .ecommerceText h3{
         font-size: 1.5rem;
     }
     .ecommerceText p{

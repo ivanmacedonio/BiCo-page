@@ -5,14 +5,14 @@ import webs from "../assets/siteswebv.webp";
 import "../styles/Webs.css";
 export const Webs = () => {
   return (
-    <div className="websContainer">
+    <section className="websContainer">
       <motion.div
         className="imageWebContainer"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <img src={webs} alt="" />
+        <img src={webs} alt="Ecommerce" />
       </motion.div>
       <motion.div
         className="textWebContainer"
@@ -20,8 +20,8 @@ export const Webs = () => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2>¿Qué Tipo De Web Necesitás?</h2>
-        <h1>Elegí el que más te convenga.</h1>
+        <h3>¿Qué Tipo De Web Necesitás?</h3>
+        <h2>Elegí el que más te convenga.</h2>
         <p>
           Hay un tipo de web para cada necesidad, nosotros lo hacemos realidad.
           Elegí el que más te convenga y te lo cotizamos.
@@ -34,6 +34,6 @@ export const Webs = () => {
         </ul>
         <Link to={'/portfolio'} className="link1">Ver Portafolio {">"}</Link>
       </motion.div>
-    </div>
+    </section>
   );
 };

@@ -36,10 +36,10 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contactContainer">
+    <contact className="contactContainer">
       <div className="sideCard"></div>
       <div className="formContact">
-        <h1>Contactate con nosotros.</h1>
+        <h2>Contactate con nosotros.</h2>
         <p>Esperamos tu mensaje, respondemos en 24hs hábiles</p>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="inputsContact">
@@ -77,6 +77,6 @@ export const Contact = () => {
           <button type="submit">Enviar</button>
         </form>
       </div>
-    </div>
+    </contact>
   );
 };

@@ -6,7 +6,7 @@ export const Portfolio = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <motion.div
+    <motion.section
       className="portfolio-cnt"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -42,14 +42,6 @@ export const Portfolio = () => {
         <div
           className="box"
           onClick={() => {
-            window.location.href = "https://accenture-dev.netlify.app/";
-          }}
-        >
-          <h1>Accenture</h1>
-        </div>
-        <div
-          className="box"
-          onClick={() => {
             window.location.href = "https://bemus.netlify.app/";
           }}
         >
@@ -64,6 +56,6 @@ export const Portfolio = () => {
           <h1>Vandalia</h1>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };

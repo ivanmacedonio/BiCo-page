@@ -7,10 +7,18 @@
     margin-bottom: 10vh;
 }
 
-.tiendaContainer h1 {
+.tiendaContainer h2 {
     margin: 5rem 0 2rem 0;
     font-size: 2.5rem;
 }
+
+#center{
+    font-size: 2rem;
+    margin:2rem;
+    margin: 5rem 0;
+    margin-bottom: 2rem;
+}
+
 
 .tiendaContainer b {
     color: rgb(255, 0, 200);
@@ -30,7 +38,7 @@
     color: white;
     padding: 1.3rem;
     margin-bottom: 0;
-    border-top-right-radius: 1rem;
+    margin-top: 0;
 }
 
 .tiendaCard h3 {
@@ -66,8 +74,25 @@
     border-radius: 1rem;
 }
 
+#price{
+    background-color: rgb(255, 177, 33);
+    margin: 0;
+    border-top-right-radius: 1rem;
+
+}
+#price p{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+
 
 @media(max-width: 768px) {
+
+    #center{
+        margin-bottom: 2rem;
+    }
     .tiendaList {
         display: flex;
         flex-direction: column;
@@ -77,5 +102,11 @@
     .tiendaContainer h1 {
         margin-left: 0rem;
         font-size: 2rem;
+    }
+    .tiendaCard h2{
+        font-size: 1.2rem;
+    }
+    .tiendaCard h3{
+        font-size: 1rem;
     }
 }

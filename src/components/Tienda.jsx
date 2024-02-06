@@ -1,15 +1,20 @@
 import React from "react";
 import check from "../assets/check2.svg";
 import danger from "../assets/danger.svg";
+import money from "../assets/money.svg";
 import "../styles/Tienda.css";
 export const Tienda = () => {
   return (
-    <div className="tiendaContainer">
-      <h1>
+    <section className="tiendaContainer">
+      <h2 id="center">
         Nuestros <b>productos</b>
-      </h1>
+      </h2>
       <div className="tiendaList">
         <div className="tiendaCard">
+          <div className="listItem" id="price">
+            <img src={money} alt="costo" />
+            <p>$100 USD</p>
+          </div>
           <h2>Landing / Onepage</h2>
           <h3>
             Una Landing o Onepage son páginas web donde el cliente tiene a la
@@ -52,6 +57,10 @@ export const Tienda = () => {
           </div>
         </div>
         <div className="tiendaCard">
+          <div className="listItem" id="price">
+            <img src={money} alt="" />
+            <p>$350 USD</p>
+          </div>
           <h2>Tienda online</h2>
           <h3>
             Tener una tienda online es la forma más eficaz de lanzar tu negocio
@@ -87,6 +96,10 @@ export const Tienda = () => {
           </div>
         </div>
         <div className="tiendaCard">
+          <div className="listItem" id="price">
+            <img src={money} alt="" />
+            <p>$500 USD</p>
+          </div>
           <h2>Proyecto Personalizado</h2>
           <h3>
             Posiblemente una categoría no es suficiente para lo que estás
@@ -120,6 +133,6 @@ export const Tienda = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

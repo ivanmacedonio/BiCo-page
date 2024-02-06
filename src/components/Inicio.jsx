@@ -10,9 +10,9 @@ export const Inicio = () => {
   }
 
   return (
-    <div className="containerInicio">
+    <header className="containerInicio">
       <div className="logoContainer">
-        <h2>BIXO</h2>
+        <h1>BIXO</h1>
       </div>
       <motion.div
         className="textInicio"
@@ -20,8 +20,8 @@ export const Inicio = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2>Diseño Web </h2>
-        <h1>Personalizado</h1>
+        <h1>Diseño Web</h1>
+        <h2>Personalizado</h2>
 
         <div class="main__action" onClick={handleScroll}>
           <a class="main__scroll" href="#">
@@ -39,6 +39,6 @@ export const Inicio = () => {
           </a>
         </div>
       </motion.div>
-    </div>
+    </header>
   );
 };

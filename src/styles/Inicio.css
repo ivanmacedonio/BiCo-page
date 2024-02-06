@@ -17,15 +17,15 @@
     border-radius: 1rem;
     max-width: 20rem;
 }
-.textInicio h2{
+.textInicio h1{
     font-size: 2.8rem;
     margin-bottom: 0rem;
     font-weight: 500;
 }
-.logoContainer h2{
-    font-size: 3rem;
+.logoContainer h1{
+    font-size: 2.5rem;
 }
-.textInicio h1{
+.textInicio h2{
     font-size: 5rem;
     font-weight: 900;
     margin-top: 0;
@@ -43,11 +43,11 @@
 }
 
 @media(max-width: 768px){
-    .textInicio h2{
+    .textInicio h1{
         font-size: 2rem;
     }
-    .textInicio h1{
-        font-size: 3rem;
+    .textInicio h2{
+        font-size: 2.8rem;
     }
 }
 a {
