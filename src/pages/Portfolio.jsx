@@ -15,46 +15,46 @@ export const Portfolio = () => {
       <div className="header-portfolio">
         <h1>Portfolio.</h1>
       </div>
-      <div className="portfolio">
+      <section className="portfolio">
         <h2>Diseñar Webs Es Nuestra Pasión.</h2>
         <p>
           Algunos de nuestros últimos trabajos y plantillas. No dudes en
           consultarnos para mas ejemplares
         </p>
-      </div>
+      </section>
       <div className="webs-cnt">
-        <div
+        <article
           className="box"
           onClick={() => {
             window.location.href = "https://rockit-dev.netlify.app/";
           }}
         >
           <h1>Rockit</h1>
-        </div>
-        <div
+        </article>
+        <article
           className="box"
           onClick={() => {
             window.location.href = "https://conekta.netlify.app/";
           }}
         >
           <h1>Conekta</h1>
-        </div>{" "}
-        <div
+        </article>{" "}
+        <article
           className="box"
           onClick={() => {
             window.location.href = "https://bemus.netlify.app/";
           }}
         >
           <h1>Bemus</h1>
-        </div>
-        <div
+        </article>
+        <article
           className="box"
           onClick={() => {
             window.location.href = "https://www.vandalia.com.ar/";
           }}
         >
           <h1>Vandalia</h1>
-        </div>
+        </article>
       </div>
     </motion.section>
   );

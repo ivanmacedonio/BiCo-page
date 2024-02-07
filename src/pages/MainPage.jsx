@@ -9,15 +9,15 @@ import { Webs } from "../components/Webs";
 import "../styles/MainPage.css";
 export const MainPage = () => {
   return (
-    <div className="mainPageContainer">
-      <div className="Inicio">
+    <main className="mainPageContainer">
+      <body className="Inicio">
         <Inicio></Inicio>
         <Webs></Webs>
         <Ecommerce></Ecommerce>
         <Ventajas></Ventajas>
         <Tienda></Tienda>
         <Contact></Contact>
-      </div>
-    </div>
+      </body>
+    </main>
   );
 };
