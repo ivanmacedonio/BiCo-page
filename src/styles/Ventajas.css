@@ -1,9 +1,10 @@
 .ventajasContainer {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin: 10rem 0;
     font-family: 'noto sans';
     gap: 10rem;
+
 }
 
 .ventajasCard {

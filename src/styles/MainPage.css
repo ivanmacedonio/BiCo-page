@@ -9,3 +9,20 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+
+#wp{
+    max-width:3.5rem;
+    position: fixed;
+    top: 90%;
+    left: 94%;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 768px){
+    #wp{
+        max-width: 3rem;
+        left: 80%;
+    }
+}

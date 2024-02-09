@@ -1,10 +1,11 @@
 .tiendaContainer {
     font-family: 'noto sans';
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10vh;
+    margin-top: 5vh;
 }
 
 .tiendaContainer h2 {
@@ -21,7 +22,7 @@
 
 
 .tiendaContainer b {
-    color: rgb(255, 0, 200);
+    color: rgb(144, 0, 255);
 }
 
 
@@ -72,15 +73,22 @@
 
 .tiendaCard {
     border-radius: 1rem;
+    min-width: 33%;
 }
 
 #price{
     background-color: rgb(255, 177, 33);
     margin: 0;
     border-top-right-radius: 1rem;
-
 }
-#price p{
+
+#fire{
+    background-color: rgb(186, 68, 0);
+    margin: 0;
+    border-top-right-radius: 1rem;
+}
+
+#price p, #fire p{
     font-style: normal;
     font-weight: 800;
     font-size: 1.2rem;
@@ -108,5 +116,16 @@
     }
     .tiendaCard h3{
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px){
+    .tiendaCard {
+        border-radius: 1rem;
+        min-width: 100%;
+    }
+    .tiendaList{
+        gap: 1rem;
+        max-width: 80%;
     }
 }

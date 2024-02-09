@@ -1,6 +1,7 @@
 import React from "react";
 import check from "../assets/check2.svg";
 import danger from "../assets/danger.svg";
+import fire from '../assets/fire.svg';
 import money from "../assets/money.svg";
 import "../styles/Tienda.css";
 export const Tienda = () => {
@@ -11,8 +12,8 @@ export const Tienda = () => {
       </h2>
       <div className="tiendaList">
         <div className="tiendaCard">
-          <div className="listItem" id="price">
-            <img src={money} alt="costo" />
+          <div className="listItem" id="fire">
+            <img src={fire} alt="costo" />
             <p>$100 USD</p>
           </div>
           <h2>Landing / Onepage</h2>
