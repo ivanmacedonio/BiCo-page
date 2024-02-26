@@ -55,6 +55,15 @@ export const Portfolio = () => {
         >
           <h1>Vandalia</h1>
         </article>
+        <article
+          className="box"
+          onClick={() => {
+            window.location.href =
+              "https://fenix-productos-economicos.netlify.app/";
+          }}
+        >
+          <h1>Fenix</h1>
+        </article>
       </div>
     </motion.section>
   );

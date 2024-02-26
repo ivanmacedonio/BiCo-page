@@ -9,11 +9,11 @@ import { Webs } from "../components/Webs";
 
 import "../styles/MainPage.css";
 export const MainPage = () => {
-
-  function handleWhatsAppClick(){
-    const number = '+541127405227'
-    const message = 'Hola, ¿cómo puedo ayudarte?'
-    window.open(`https://wa.me/${number}?text=${message}`, '_blank');
+  function handleWhatsAppClick() {
+    const number = "+541127405227";
+    const message =
+      "¡Hola! ¿Cómo estás? Estoy interesado en un sitio web a medida. ¿Podrías ayudarme con eso?";
+    window.open(`https://wa.me/${number}?text=${message}`, "_blank");
   }
   return (
     <main className="mainPageContainer">
