@@ -26,6 +26,14 @@ export const Portfolio = () => {
         <article
           className="box"
           onClick={() => {
+            window.location.href = "https://franciscopedroza.netlify.app/";
+          }}
+        >
+          <h1>Francisco Pedroza</h1>
+        </article>
+        <article
+          className="box"
+          onClick={() => {
             window.location.href = "https://rockit-dev.netlify.app/";
           }}
         >
