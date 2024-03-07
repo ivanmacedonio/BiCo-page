@@ -63,6 +63,14 @@ export const Portfolio = () => {
         >
           <h1>Vandalia</h1>
         </article>
+        <article
+          className="box"
+          onClick={() => {
+            window.location.href = "https://ivanmacedonio.netlify.app/";
+          }}
+        >
+          <h1>Ivandev</h1>
+        </article>
       </div>
     </motion.section>
   );
