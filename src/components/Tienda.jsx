@@ -14,7 +14,7 @@ export const Tienda = () => {
         <div className="tiendaCard">
           <div className="listItem" id="fire">
             <img src={fire} alt="costo" />
-            <p>$100 USD</p>
+            <p>40.000 AR$</p>
           </div>
           <h2>Landing / Onepage</h2>
           <h3>
@@ -60,7 +60,7 @@ export const Tienda = () => {
         <div className="tiendaCard">
           <div className="listItem" id="price">
             <img src={money} alt="" />
-            <p>$350 USD</p>
+            <p>150.000 AR$</p>
           </div>
           <h2>Tienda online</h2>
           <h3>
@@ -99,7 +99,7 @@ export const Tienda = () => {
         <div className="tiendaCard">
           <div className="listItem" id="price">
             <img src={money} alt="" />
-            <p>$500 USD</p>
+            <p>200.000 AR$</p>
           </div>
           <h2>Proyecto Personalizado</h2>
           <h3>
