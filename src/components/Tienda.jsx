@@ -1,7 +1,6 @@
 import React from "react";
 import check from "../assets/check2.svg";
-import danger from "../assets/danger.svg";
-import fire from '../assets/fire.svg';
+import fire from "../assets/fire.svg";
 import money from "../assets/money.svg";
 import "../styles/Tienda.css";
 export const Tienda = () => {
@@ -52,15 +51,11 @@ export const Tienda = () => {
               Sección Inicio, Nosotros, Servicios y Contacto (Blog opcional)
             </p>
           </div>
-          <div className="listItem">
-            <img src={danger} alt="" />
-            <p>Consultar por soporte mensual extra </p>
-          </div>
         </div>
         <div className="tiendaCard">
           <div className="listItem" id="price">
             <img src={money} alt="" />
-            <p>150.000 AR$</p>
+            <p>100.000 AR$</p>
           </div>
           <h2>Tienda online</h2>
           <h3>
@@ -91,15 +86,11 @@ export const Tienda = () => {
             <img src={check} alt="" />
             <p>Botón de Whatsapp / Formulario de contacto</p>
           </div>
-          <div className="listItem">
-            <img src={danger} alt="" />
-            <p>Consultar por Soporte Mensual extra</p>
-          </div>
         </div>
         <div className="tiendaCard">
           <div className="listItem" id="price">
             <img src={money} alt="" />
-            <p>200.000 AR$</p>
+            <p>120.000 AR$</p>
           </div>
           <h2>Proyecto Personalizado</h2>
           <h3>
@@ -127,10 +118,6 @@ export const Tienda = () => {
           <div className="listItem">
             <img src={check} alt="" />
             <p>Feedback constante</p>
-          </div>
-          <div className="listItem">
-            <img src={danger} alt="" />
-            <p>Consultar por Soporte Mensual extra</p>
           </div>
         </div>
       </div>
